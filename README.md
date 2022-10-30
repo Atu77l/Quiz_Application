@@ -3,7 +3,7 @@ Quiz Application
 
 This Application is made with the help of handlebars,Node JS with Mongo DB as Database and deployed on Heruko Cloud Platform.
 
-View this Application live :- https://quiz97.herokuapp.com/
+View this Application live :- https://quiz87.herokuapp.com/
 
 
 ![image](https://user-images.githubusercontent.com/82228780/188424864-02d45311-6bb3-45c6-a3f0-39bbb96442cc.png)
