@@ -8,7 +8,6 @@ const MongoStore=require('connect-mongo');
 require('dotenv').config({ path: './config/config.env' });
 
 //Database
-
 const mongoose=require('mongoose');
 const connectDB=require('./config/db');
 connectDB();
@@ -73,5 +72,5 @@ app.use((req,res,next)=>{
 })
 
 app.listen(process.env.PORT || 3000,()=>{
-    console.log(`Server Is Running at PORT ${process.env.NODE_ENV} mode ${PORT}`);
+    console.log(`Server Is Running at PORT ${process.env.NODE_ENV} mode ${process.env.PORT}`);
 })
