@@ -73,6 +73,6 @@ app.use((req,res,next)=>{
     next();
 })
 
-app.listen(PORT,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log(`Server Is Running at PORT ${process.env.NODE_ENV} mode ${PORT}`);
 })
