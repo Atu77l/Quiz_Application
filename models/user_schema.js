@@ -8,8 +8,11 @@ const quiz_score=new mongoose.Schema({
 
 const userSchema=new mongoose.Schema({
     username:String,
-    email:String,
-    hashpass:String,
+    email: {
+        type: String,
+        unique: true
+    },hashpass:String,
+    role:String,
     quizzes:[quiz_score],
 });
 

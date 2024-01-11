@@ -11,6 +11,9 @@
 </div>
 
 <h4>Log In</h4>
+ {{#if error}}
+        <p class="error-message">{{error}}</p>
+ {{/if}}
 
 <div class="form">
     <form action="/auth/login" method="post">

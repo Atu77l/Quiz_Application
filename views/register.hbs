@@ -12,6 +12,10 @@
 
 <h4>Sign Up</h4>
 
+ {{#if error}}
+        <p class="error-message">{{error}}</p>
+ {{/if}}
+
 <div class="form">
     <form action="/auth/register" method="post">
     <div class="input-field col s6">
@@ -25,6 +29,10 @@
     <div class="input-field col s6">
           <input name="password" id="password" type="password" required class="validate">
           <label for="password">Password</label>
+    </div>
+    <div class="input-field col s6">
+          <input name="role" id="role" type="text" required class="validate">
+          <label for="role">Role</label>
     </div>
       <button class="btn waves-effect waves-light" type="submit" name="action"><b>Sign Up</b>
   </button>
